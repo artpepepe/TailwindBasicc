@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind เบื้องต้น</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+    <div class="bg-green-300 font-bold w-full h-10">
+        <div class="text-yellow-500 text-3xl text-center text-opacity-100"> Bongkotphetr Yodkrathok</div>
+                  <!-- font size -->
+    </div>
+    <div class="text-sm font-thin">Hello world</div>
+    <div class="text-base font-black ">Hello world</div>
+    <div class="text-lg">Hello world</div>
+    <div class="text-xl">Hello world</div>
+    <div class="text-2xl ">Hello world</div>
+    <div class="text-4xl ">Hello world</div>
+             <div class="h-10"></div> 
+             <!-- margin padding -->
+    <div class="bg-black-500 mx-10 my-10">
+        <div class="bg-red-500">Content</div>
+    </div>
+
+    <div class="bg-green-500 m-10 px-2">
+        <div class="bg-red-500">Content</div>
+    </div>
+            <!-- border -->
+     <button class="bg-green-500 text-white m-10 p-5 border-2 border-red-500">Click</button>       
+     <button class="bg-green-500 text-white m-10 p-5 border-red-500 border-y-8">Click</button>       
+     <button class="bg-green-500 text-white m-10 p-5 border-red-500 border-x-8">Click</button>       
+    
+     <button class="bg-green-500 text-white m-10 p-5 rounded">Click1</button>
+     <button class="bg-green-500 text-white m-10 p-5 rounded-sm">Click2</button>
+     <button class="bg-green-500 text-white m-10 p-5 rounded-lg">Click3</button>
+     <button class="bg-green-500 text-white m-10 p-5 rounded-xl">Click4</button>
+     <button class="bg-green-500 text-white m-10 p-5 rounded-full">Click5</button>
+     <button class="bg-green-500 text-white m-10 p-5 border-2 border-red-500 border-solid">Click6</button>
+     <button class="bg-green-500 text-white m-10 p-5 border-8 border-red-500 border-dashed">Click7</button>
+                   <!-- box shadow -->
+    <div class="h-10"></div>
+    <div class="bg-blue-200 h-80">
+        <button class="bg-white m-10 p-5 shadow-2xl hover:bg-violet-600 hover:text-white">CLICK</button>
+               <!-- Pseudo Selector -->
+        <form class="m-10 ">
+            <input type="text" placeholder="ป้อนข้อมูล" class="p-1 rounded-sm focus:bg-green-200">
+            <button class="bg-green-500 p-1">บันทึก</button>
+        </form>
+    </div>       
+          <div class="h-10"></div>
+          <!-- Responsive design / COntainer-->
+    <div class=" bg-green-500">
+        <h1 class="text-4xl font-bold sm:text-yellow-500">Heading</h1>
+        
+    </div>
+             <div class="h-10"></div>
+             <!-- Flexbox -->
+
+        <div class="bg-yellow-200 flex justify-center items-center ">
+
+            <div class="w-10 h-10  bg-green-500">Box1</div>
+            <div class="w-10 h-10 ml-10 bg-green-500">Box2</div>
+            <div class="w-10 h-10 ml-10 bg-green-500">Box3</div>
+        </div>
+
+        <!-- Wrap Flexitem -->
+        <div class="h-10"></div>
+        <div class="bg-yellow-200 flex flex-wrap">
+
+            <div class="w-10 h-10  bg-green-500">Box1</div>
+            <div class="w-10 h-10  bg-green-500">Box2</div>
+            <div class="w-10 h-10  bg-green-500">Box3</div>
+        </div>
+            <!-- Grow & Shrink -->
+            <div class="h-10"></div>
+         <div class="bg-yellow-200 flex flex-wrap ">
+
+                <div class="w-10 h-10 flex-1  bg-green-500">Box1</div>
+                <div class="w-10 h-10 flex-1 bg-green-500">Box2</div>
+                <div class="w-10 h-10 flex-1 bg-green-500">Box3</div>
+            </div>
+            <div class="bg-yellow-200 w-auto flex flex-wrap ">
+
+                <div class="w-80 h-10  bg-red-500 flex-shrink ">Box1</div>
+                <div class="w-80 h-10  bg-blue-500 flex-grow">Box2</div>
+                <div class="w-80 h-10  bg-violet-500 flex-auto">Box3</div>
+            </div>
+            <!-- Grid Layout -->
+            <div class="h-10"></div>
+            
+            <div class="h-10"></div>
+            <!-- Gap -->
+            <div class="bg-yellow-200 w-auto grid grid-cols-3 grid-rows-3 gap-x-4 gap-y-8">
+
+                <div class="h-10  bg-green-500">Box1</div>
+                <div class="h-10  bg-green-500">Box2</div>
+                <div class="h-10  bg-green-500">Box3</div>
+                <div class="h-10  bg-green-500">Box4</div>
+                <div class="h-10  bg-green-500">Box5</div>
+                <div class="h-10  bg-green-500">Box6</div>
+                <div class="h-10  bg-green-500">Box7</div>
+                <div class="h-10  bg-green-500">Box8</div>
+                <div class="h-10  bg-green-500">Box9</div>
+               
+            </div>
+
+            <!-- Justify-Items -->
+            <div class="h-10"></div>
+            <div class="bg-yellow-200 w-auto grid justify-items-center">
+
+                <div class="h-10  bg-green-500">Box1</div>
+                <div class="h-10  bg-green-500">Box2</div>
+                <div class="h-10  bg-green-500">Box3</div>
+               
+            </div>
+            <div class="h-10"></div>
+            <!-- Justify-Self -->
+            <div class="bg-yellow-200 w-auto grid ">
+
+                <div class="h-10  bg-green-500 justify-self-start">Box1</div>
+                <div class="h-10  bg-green-500 justify-self-center">Box2</div>
+                <div class="h-10  bg-green-500 justify-self-end">Box3</div>
+               
+            </div>
+            <div class="h-10"></div>
+            <!-- Layer Apply -->
+            <a href="#">Menu1</a>
+            <a href="#">Menu2</a>
+            <a href="#">Menu3</a>
+            <div class="h-10"></div>
+            <!-- Component -->
+            <a href="#"class="menu-button">Menu1</a>
+            <a href="#"class="menu-button">Menu2</a>
+            <a href="#"class="menu-button">Menu3</a>
+         </body>
+</html>
